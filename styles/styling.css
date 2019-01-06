@@ -1,0 +1,342 @@
+body {
+	background-color: #ffffff;
+	font-family: "Trebuchet MS";
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color:inherit;
+}
+
+.home-bg {
+	background-image: url(../img/picbg.png);
+	background-repeat: no-repeat;
+}
+/* Navbar */
+.navbar {
+	width: 92%;
+	height: 40px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 90px;
+	padding-top: 10px;
+}
+
+nav a {
+	color: #4b4b4b;
+	text-decoration: none;
+}
+
+/* - introductionary textbox /w hobbies and interests*/
+
+#intro-text {
+	text-align: justify;
+	width: 35%;
+	margin-left: 57%;
+	padding-top: 4%;
+	animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		padding-top: 6%;
+	}
+	to {
+		opacity: 1;
+		padding-top: 4%;
+	}
+}
+
+#intro-text h1 {
+	font-size: 2.8em
+}
+
+/* Black container for information regarding my hobbies.
+-----------------------------------------------------------------------------------------
+i've used an online generator for calculating values regarding the box shadow for the img:
+https://cssgenerator.org/box-shadow-css-generator.html; */
+
+.container {
+	margin-top: 22em;
+	background-color: #2b2c2c;
+	height: 600px;
+	width: 100%;
+	
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.left-class {
+	box-shadow: 11px 11px 39px -3px rgba(0,0,0,0.88);
+	-webkit-box-shadow: 11px 11px 39px -3px rgba(0,0,0,0.88);
+	-moz-box-shadow: 11px 11px 39px -3px rgba(0,0,0,0.88);
+	border: 3px white solid;
+	
+	display: flex;
+  	justify-content: center;
+
+}
+.right-class {
+	display: inline-block;
+	margin-left: 17%;
+	margin-right: 10%;
+}
+
+.right-class li {
+	font-size: 1.4em;
+	color: white;
+}
+
+.right-class h1 {
+	font-size: 2.8em;
+	color: white;
+}
+
+/*resume styling.
+It is structured as follows: One "wrapper" for the general canvas, followed
+by a nested wrapper for the misc. content. 
+
+- Various images are from pixabay.com
+
+- Gradient values from https://cssgradient.io/gradient-backgrounds
+
+- Box shadow values from https://cssgenerator.org/box-shadow-css-generator.html;*/
+
+.wrapper {
+
+	width: 84%;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+
+	background: #C9CCD3;
+ 	background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+ 	background-blend-mode: lighten;
+
+	box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+	-webkit-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+	-moz-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+
+	margin-left: auto;
+	margin-right: auto;
+	
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-gap: 25px;
+
+	color: #1f2025;
+
+}
+
+.education-icon {
+	margin: auto;
+	padding-top: 45px;
+}
+.work-icon {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+}
+
+.education-info {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.work-info {
+	margin-right: 150px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.wrapper h2 {
+	font-size: 2.6em;
+}
+
+.wrapper dt {
+	line-height: 1.6;
+	font-size: 1.2em;
+}
+
+/*The nested wrapper for the misc. content*/
+
+.nested-wrapper {
+	background-color: #2b2c2c;
+
+	display: grid;
+	grid-column: 1 / -1;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	grid-gap: 35px;
+
+	color: #edecea;
+
+}
+
+.nested-wrapper h3 {
+	font-size: 2em;
+}
+
+.programming-box, .skill-box {
+	margin-right: auto; 
+}
+
+.misc-icon {
+	margin: auto;
+}
+
+/*The contacts card.
+- Gradient values from https://cssgradient.io/gradient-backgrounds
+
+- Box shadow values from https://cssgenerator.org/box-shadow-css-generator.html*/
+
+.contacts-card {
+	width: 84%;
+	height: 100%;
+
+	background: #C9CCD3;
+ 	background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+ 	background-blend-mode: lighten;
+ 
+	box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+	-webkit-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+	-moz-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+
+	color: #1f2025;
+
+	text-align: center;
+
+}
+
+.contact-info {
+	width:100%;
+	font-size: 2em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+
+.contacts-nested {
+	display: grid;
+	grid-column: 1 / -1;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.contacts-card > div:hover, .contacts-nested > div:hover {
+	box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+	-webkit-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+	-moz-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.47);
+}
+
+
+.contacts-nested p {
+	font-size: 3em;
+}
+
+/*Portfolio.
+
+- Gradient values from https://cssgradient.io/gradient-backgrounds*/
+
+.mosaic-wrapper {
+	width: 84%;
+	height: 800px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5em;
+	
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+
+	grid-gap: 6px;
+
+}
+
+.tile-lg {
+	grid-row: span 8;
+	grid-column: span 4;
+}
+
+.tile-sm, .tile-med {
+	grid-row: span 4;
+	grid-column: span 2;
+}
+
+
+
+.ticketmaster-1 {
+	background-image: url(../img/portfolio_img/ticketmaster_1.png);
+}
+
+.ticketmaster-2 {
+	background-image: url(../img/portfolio_img/ticketmaster_2.png);
+}
+
+.ticketmaster-3 {
+	background-image: url(../img/portfolio_img/ticketmaster_3.png);
+}
+
+.driv-1 {
+	background-image: url(../img/portfolio_img/driv_1.png);
+}
+
+.driv-2 {
+	background-image: url(../img/portfolio_img/driv_2.png);
+}
+
+.driv-3 {
+	background-image: url(../img/portfolio_img/driv_3.png);
+}
+.mosaic-wrapper > div {
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	opacity: 0.9;
+}
+
+.mosaic-wrapper > div:hover {
+	background-image: unset;
+	background: #C9CCD3;
+ 	background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+ 	background-blend-mode: lighten;
+}
+
+.mosaic-wrapper > div > p {
+	visibility: hidden;
+}
+
+.mosaic-wrapper > div:hover > p {
+	text-align: justify;
+	visibility: visible;
+	font-size: 130%;
+}

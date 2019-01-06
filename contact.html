@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This is my contacts-page.">
+	<title>Mysite</title>
+	<link rel="stylesheet" href="styles/styling.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="contacts-card">
+			<div class="contact-info" onclick="location.href='mailto:example@example.com';">
+				<p><i class="fas fa-envelope"></i> eirik.kvistad@gmail.com</p>
+				<p><i class="fas fa-mobile-alt"></i> +47 47903537</p>
+			</div>
+			<div class="contacts-nested">
+				<div class="git-box" onclick="location.href='https://github.com/KongKvistad';">
+					<p><i class="fab fa-github"></i> Github</p>
+				</div>
+				<div class= "face-box" onclick="location.href='https://www.facebook.com/eirik.kvistad';">
+					<p><i class="fab fa-facebook-f"></i> Facebook</p>
+				</div>
+				<div class= "youtube-box" onclick="location.href='https://www.youtube.com/channel/UCD1NvyWkf1WHiygrIOuIAZA';">
+					<p><i class="fab fa-youtube"></i> Youtube</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>	
+</html>
